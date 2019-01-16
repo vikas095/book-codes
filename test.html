@@ -1,0 +1,20 @@
+
+<html>
+<head>
+</head>
+<body>
+	<script>
+		 var myvar = "global";
+        function f() {
+        console.log(myvar); 
+        if (true) {
+            var myvar = "local"; 
+        }
+        console.log(myvar);
+    }
+
+        
+        f();
+	</script>	
+</body>	
+</html>
