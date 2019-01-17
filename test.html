@@ -1,20 +1,25 @@
-
 <html>
-<head>
-</head>
-<body>
-	<script>
-		 var myvar = "global";
-        function f() {
-        console.log(myvar); 
-        if (true) {
-            var myvar = "local"; 
-        }
-        console.log(myvar);
-    }
+    <body>
+    	<script>
+            star1();
+            star2();            
+            function star1()
+            {
+                var num=5;
+                for (var i = 1; i<=num; i++)
+                {
+                   document.write("*");debugger;
+                }
+            }
+            function star2()
+            {
+                var num=5;
+                for (var i = 1; i<=num; i++)
+                {
 
-        
-        f();
-	</script>	
-</body>	
+                   documnt.write("*");debugger;
+                }
+            }
+    	</script>	
+    </body>	
 </html>
