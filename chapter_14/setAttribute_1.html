@@ -1,0 +1,13 @@
+<!DOCTYPE html to add a new elements to the HTML DOM you must create (element node)first, then append it to an existing elements>
+<html>
+<body>
+  <input value="OK">
+  <button onclick="myFunction()">click</button>
+  <script>
+    function myFunction()
+    {
+    document.getElementsByTagName("INPUT")[0].setAttribute("type", "button"); 
+    }
+  </script>
+</body>
+</html>

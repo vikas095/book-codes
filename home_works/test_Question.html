@@ -1,0 +1,31 @@
+<html>
+<body>
+ <script>
+  // in this program object can access get_private-variable but the question is object can't use the get_private_variable.
+  function Test()
+  {
+     this.private_variable='Test';
+     this.get_private_data=function(){
+      return this.private_variable;
+    }
+  }
+
+  var test=new Test();
+  console.log(test.private_variable);
+  console.log(test.get_private_data());
+
+  function Test1()
+  {
+     var pv='test1';
+     this.pd=function(){
+      return  pv;
+    }
+  }
+
+  var test1=new Test1();
+  console.log(test1.pv);
+  console.log(test1.pd());
+  
+</script> 
+</body> 
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html to add a new elements to the HTML DOM you must create (element node)first, then append it to an existing elements>
+<html>
+<body>
+  <a id="anchor_id" href="www.google.com" target="_blank">google link</a>
+  <button onclick="myFunction()">click</button>
+  <script>
+    function myFunction()
+    {
+      var x=document.getElementById("anchor_id").getAttribute("target");
+      console.log(x);
+    }
+
+  </script>
+</body>
+</html>

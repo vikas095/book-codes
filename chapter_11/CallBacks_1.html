@@ -1,0 +1,32 @@
+<html>
+<body>
+	<script>
+		//simple example of callback but not useing callback function in it
+		function f1(val) 
+		{
+			alert(`hello ${val} .`);
+		}
+		f1('vikas');
+
+		//In this example ii'm using callback function
+		function f2(val, callback) {
+			alert(`hello ${val} .`);
+			callback();
+		}
+
+		f2('vikas yadav', function() { alert(`bye... bye.... `); } );
+
+		//another way
+		function f3(val, callback) {
+			alert(`hello ${val} .`);
+			callback();
+		}
+
+		 function cb() { alert(`bye... bye.... `); } 
+
+		f3('neha',cb);
+
+
+	</script> 
+</body> 
+</html>

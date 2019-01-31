@@ -1,0 +1,28 @@
+<html>
+<body>
+	<script>
+		function f1()
+		{
+			this.name="vikas";
+			this.age=24;
+		}
+
+		var obj=new f1();
+		console.log(obj.name);
+		console.log(obj.age);
+
+		var obj1=new f1();
+		console.log(obj1.name);
+		console.log(obj1.age);
+
+		obj.salary=12000;
+		console.log(obj.salary);
+		console.log(obj1.salary);
+
+		f1.prototype.income=12000;
+		console.log(obj.income);
+		console.log(obj1.income);
+
+	</script> 
+</body> 
+</html>

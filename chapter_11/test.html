@@ -1,0 +1,17 @@
+<html>
+<body>
+	<script>
+    function* MyGenerator(n) {
+      yield 'str1';
+      yield 'str2';
+    }
+    var iterator=MyGenerator();
+    var result1=iterator.next();
+    console.log(result1);
+    var result2=iterator.next();
+    console.log(result2);
+    var result3=iterator.next();
+    console.log(result3);
+  </script> 
+</body> 
+</html>
